@@ -1,11 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Лабораторна робота з HTML">
+    <title>Лабораторна робота №1</title>
 </head>
 <body>
-    
+
+<header>
+    <h1>Лабораторна робота №1</h1>
+</header>
+
+<nav>
+    <a href="#">Головна</a> | <a href="#">Розклад</a> | <a href="#">Контакти</a>
+</nav>
+
+<main>
+    <!-- Додано список бригад -->
+    <section>
+        <h2>Список бригад</h2>
+        <ul>
+            <li>Підгрупа 1
+                <ol>
+                    <li>Бригада
+                        <ul>
+                            <li>Студент 1</li>
+                            <li>Студент 2</li>
+                        </ul>
+                    </li>
+                    <li>Бригада
+                        <ul>
+                            <li>Студент 3</li>
+                            <li>Студент 4</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>Підгрупа 2
+                <ol>
+                    <li>Бригада
+                        <ul>
+                            <li>Студент 5</li>
+                            <li>Студент 6</li>
+                        </ul>
+                    </li>
+                    <li>Бригада
+                        <ul>
+                            <li>Студент 7</li>
+                            <li>Студент 8</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Розклад занять -->
+    <section>
+        <h2>Розклад занять</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>День / урок</th>
+                <th>Тиждень</th>
+                <th>Урок 1</th>
+                <th>Урок 2</th>
+                <th>Урок 3</th>
+                <th>Урок 4</th>
+                <th>Урок 5</th>
+                <th>Урок 6</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Понеділок</td>
+                <td>I</td>
+                <td>Лекція 5119</td>
+                <td>Лекція 5119</td>
+                <td>ЛР 5125</td>
+                <td>ЛР 5125</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td>Лекція 5119</td>
+                <td>Лекція 5119</td>
+                <td>ЛР 5125</td>
+                <td>ЛР 5125</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td></td>
+                <td></td>
+                <td>Лекція 5119</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Форма для додавання студента -->
+    <div class="container">
+        <label><input type="radio" name="subgroup" value="1" checked> Підгрупа1</label>
+        <label><input type="radio" name="subgroup" value="2"> Підгрупа2</label>
+
+        <label for="brigade">Бригада</label>
+        <select id="brigade">
+            <option>Бригада 1</option>
+            <option>Бригада 2</option>
+            <option>Бригада 3</option>
+        </select>
+
+        <label for="lastname">Прізвище</label>
+        <input type="text" id="lastname">
+
+        <label for="firstname">Ім'я</label>
+        <input type="text" id="firstname">
+
+        <button>Додати студента</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Лабораторна робота</p>
+</footer>
+
 </body>
 </html>
