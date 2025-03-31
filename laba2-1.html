@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> список бригад ляля</title>
+<META NAME="description" CONTENT="список студентських бригад">
+</head>
+
+<body>
+    <h1> список бригад </h1>
+    <section id="pidgrupa1">
+      <h2>Підгрупа 1</h2>
+      <section id="brigada1">
+        <h3> 1. Бригада</h3>
+        <ul>
+          <li>Студент 1</li>
+          <li>Студент 2</li>
+        </ul>
+        </section>
+        <section id="brigada2">
+            <h3>2. Бригада</h3>
+            <ul>
+                <li>Студент 3</li>
+                <li>Студент 4</li>
+            </ul>
+      </section>
+    </section>
+    <section id="pidgrupa2">
+        <h2>Підгрупа 2</h2>
+      <section id="brigada1">
+        <h3>1. Бригада</h3>
+        <ul>
+          <li>Студент 5</li>
+          <li>Студент 6</li>
+          </ul>
+      <section id="brigada2">
+        <h3>2. Бригада</h3>
+        <ul>
+          <li>Студент 7</li>
+          <li>Студент 8</li>
+          </ul>
+      </section>
+    </section>  
+    
+    <section id="rozklad">
+       <table border="1" cellspacing="0">
+            <tr>
+        <th>День / урок </th>
+        <th> Тиждень</th>
+        <th> урок 1 </th>
+        <th> урок 2 </th>
+        <th> урок 3 </th>
+        <th> урок 4 </th>
+        <th> урок 5 </th>
+        <th> урок 6 </th>
+            </tr>
+          <tr>
+            <td>Понеділок</td>
+            <td>I</td>
+            <td rowspan="2" colspan="2">Лекція 5119
+                <p>Лекція 5119</p>
+            </td>
+            <td rowspan="2" colspan="2">ЛР 5125
+            <p>ЛР 5125</p>
+        </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Понеділок</td>
+            <td>II</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Вівторок</td>
+            <td>I</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Вівторок</td>
+            <td>II</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Лекція 5119</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+    </section>
+      <br>
+    <section id="forma">
+
+        <<form action="" method="get" class="form-example">
+            <div>
+                <input type="radio" id="pidgrupa1" name="pidgrupa" value="1" checked>
+                <label for="pidgrupa1">Підгрупа 1</label>
+                <input type="radio" id="pidgrupa2" name="pidgrupa" value="2">
+                <label for="pidgrupa2">Підгрупа 2</label>
+            </div>
+            <div>
+                <label for="brigada">Бригада:</label>
+                <select id="brigada" name="brigada">
+                    <option value="1">Бригада 1</option>
+                    <option value="2">Бригада 2</option>
+                </select>
+            </div>
+            <div>
+                <label for="prizvische">Прізвище:</label>
+                <input type="text" id="prizvische" name="prizvische" required>
+            </div>
+            <div>
+                <label for="imya">Ім'я:</label>
+                <input type="text" id="imya" name="imya" required>
+            </div>
+            <div>
+                <button type="submit">Додати студента</button>
+            </div>
+        </form>
+        
+        
+
+ 
+</body>
+</html>
