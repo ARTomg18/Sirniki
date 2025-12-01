@@ -1,1 +1,16 @@
+f = open("example.txt", "r")
+text = f.read()
+print(text)
+f.close()
 
+f = open("output.txt", "w")
+f.write("Перший рядок\n")
+f.write("Другий рядок\n")
+f.write("Третій рядок\n")
+f.close()
+
+f = open("append.txt", "a")
+f.write("Новий рядок 1\n")
+f.write("Новий рядок 2\n")
+f.write("Новий рядок 3\n")
+f.close()
